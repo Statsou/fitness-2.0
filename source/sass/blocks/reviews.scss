@@ -1,0 +1,177 @@
+.reviews {
+  position: relative;
+  padding: 130px 0 120px;
+
+  @include vp-1199 {
+    padding: 93px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 58px 0 70px;
+  }
+
+  h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-sapphire;
+
+    text-align: center;
+    margin: 0 0 42px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      letter-spacing: 1px;
+      margin: 0 0 39px;
+    }
+
+    @include vp-767 {
+      font-size: 31px;
+      letter-spacing: 1px;
+      margin: 0 0 36px;
+    }
+  }
+}
+
+.reviews__slider-wrapper {
+  position: relative;
+  width: 710px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 716px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.reviews__navigation {
+  position: absolute;
+  top: 38%;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+
+  @include vp-767 {
+    top: 0;
+    height: 100%;
+  }
+}
+
+.reviews__arrow {
+  position: relative;
+  background-color: transparent;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include vp-767 {
+    width: 40px;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  @include hover-focus {
+    outline: 1px $color-sapphire solid;
+  }
+
+  @include active-button {
+    background-color: $color-sapphire;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: initial;
+  }
+
+  &::before {
+    position: absolute;
+    height: 1px;
+    background-color: #102654;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    height: 1px;
+    background-color: #102654;
+    content: "";
+  }
+
+  &--prev {
+    &::before {
+      top: 20px;
+      left: 16px;
+      width: 22px;
+      transform: rotate(-45deg);
+
+      @include vp-767 {
+        top: 162px;
+        left: auto;
+        width: 14px;
+      }
+    }
+
+    &::after {
+      top: 36px;
+      left: 15px;
+      width: 23px;
+      transform: rotate(45deg);
+
+      @include vp-767 {
+        top: 172px;
+        left: auto;
+        width: 14px;
+      }
+    }
+  }
+
+  &--next {
+    &::before {
+      top: 21px;
+      left: 18px;
+      width: 22px;
+      transform: rotate(45deg);
+
+      @include vp-767 {
+        top: 162px;
+        left: auto;
+        width: 14px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 36px;
+      left: 18px;
+      width: 22px;
+      transform: rotate(-45deg);
+
+      @include vp-767 {
+        top: 172px;
+        left: auto;
+        width: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+.promotions {
+  padding: 144px 103px 120px;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 92px 45px 100px;
+  }
+
+  @include vp-767 {
+    padding: 64px 15px 70px;
+  }
+
+  h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-sapphire;
+
+    text-align: center;
+    margin: 0 0 40px;
+
+    @include vp-1199 {
+      font-size: 38px;
+      line-height: 52px;
+      margin: 0 0 38px;
+    }
+
+    @include vp-767 {
+      font-size: 29px;
+      line-height: 38px;
+      margin: 0 0 42px;
+    }
+  }
+}
+
+.promotions__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.promotions__main-promotion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 399px;
+    margin: 0 0 30px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.promotions__description {
+  color: $color-default-white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 45px 45px 42px;
+
+  background-color: $color-torch-red;
+
+  @include vp-767 {
+    text-align: center;
+    padding: 45px;
+  }
+
+  h3 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 23px;
+    letter-spacing: 1px;
+
+    padding: 0 1px;
+    margin: 0 0 5px;
+  }
+
+  span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 66px;
+
+    display: block;
+    margin: 0 0 22px;
+
+    @include vp-767 {
+      margin: 0 0 17px;
+    }
+  }
+
+  p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin: 0;
+
+    @include vp-767 {
+      margin: 0 0 31px;
+    }
+  }
+
+  a {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: inherit;
+    letter-spacing: 1px;
+
+    align-self: baseline;
+    margin: auto 0 3px 0;
+
+    border-bottom: 1px $color-default-white solid;
+
+    &:not(.disabled) {
+      @include hover {
+        opacity: 0.3;
+      }
+
+      @include focus {
+        position: relative;
+        top: 5px;
+        right: 10px;
+
+        padding: 6px 10px;
+        outline: 1px $color-default-white solid;
+        border: none;
+      }
+
+      @include active {
+        opacity: 1;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: initial;
+    }
+
+    @include vp-767 {
+      margin: 0 auto;
+    }
+  }
+}
+
+.promotions__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.promotions__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.promotions__item {
+  color: $color-resolution-blue;
+  padding: 22px 35px 25px 28px;
+  border: 7px solid;
+  border-image: linear-gradient(148.82deg, $color-crimson 0.85%, $color-smalt 100%) 30;
+
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    min-height: 211px;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    padding: 33px 35px 25px 28px;
+  }
+
+  &:not(:last-child) {
+    margin: 0 0 40px;
+
+    @include vp-1199 {
+      margin: 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 30px;
+    }
+  }
+
+  h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+
+    margin: 0 0 8px;
+
+    @include vp-767 {
+      padding: 0 5px 0 12px;
+    }
+  }
+
+  p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    margin: 0 0 66px;
+
+    @include vp-1199 {
+      margin: 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 26px;
+      padding: 0 30px;
+    }
+  }
+
+  a {
+    position: relative;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: $color-resolution-blue;
+
+    border-bottom: 1px $color-resolution-blue solid;
+
+    &:not(.disabled) {
+      @include hover {
+        opacity: 0.8;
+      }
+
+      @include focus {
+        position: relative;
+        right: 10px;
+
+        padding: 6px 10px;
+        outline: 1px $color-resolution-blue solid;
+        border: none;
+      }
+
+      @include active {
+        opacity: 1;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.3;
+      cursor: initial;
+    }
+
+
+    @include vp-1199 {
+      align-self: start;
+      margin: auto 0 2px;
+    }
+
+    @include vp-767 {
+      margin: 0 auto;
+    }
+  }
+}
+
+.promotion__space-tablet {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+}

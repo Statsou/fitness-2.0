@@ -1,0 +1,36 @@
+.button {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 14px;
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  border: 4px $color-default-white solid;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:not(.button--disabled) {
+    @include hover {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+    }
+
+    @include focus {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+    }
+
+    @include active {
+      background-color: $color-default-white;
+      color: $color-sapphire;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
+}

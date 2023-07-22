@@ -1,0 +1,91 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+$color-ghost-white:                 #F8F9FC;
+$color-whisper:                     #E8E8E8;
+$color-spindle:                     #B6BDCC;
+$color-link-water:                  #C8C9CC;
+$color-dark-gray:                   #AFAFAF;
+$color-light-slate-grey:            #74819C;
+$color-dark-cerulean:               #003D85;
+$color-smalt:                       #00359F;
+$color-persian-blue:                #2E35AC;
+$color-sapphire:                    #102654;
+$color-egyptian-blue:               #103AAE;
+$color-cobalt:                      #003EB7;
+$color-royal-blue-opacity:          #102654E3;
+$color-resolution-blue:             #1C3374;
+$color-black-russian:               #030A1A;
+$color-atoll-opacity:               #14367A80;
+$color-light-slate-grey:            #74819C;
+$color-venetian-red:                #B80027;
+$color-venetian-red-opacity:        #D10A4233;
+$color-torch-red:                   #ED0233;
+
+$color-crete-opacity:               #78787833;
+$color-green-house-opacity:         #2A3B632B;
+$color-kaitoke-green-opacity:       #10265433;
+$color-japanese-laurel:             #1C337433;
+
+$color-crimson-opacity:             #ED023333;
+$color-cobalt-secundary-opacity:    #003EB733;
+$color-crimson:                     #d10a42;
+$color-cobalt-secundary:            #0041ca;
+
+$color-red:                         #ff0000;
+$color-error:                       #ff1553;
+$color-islamic-green:               #15ab07;
+$color-valid:                       #22b259;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+// ---------------------------------
+
+// переменная используемая в html для подключения скейлинга
+$fz-default:                        16px;
+
+// у некоторых шрифтов в ios возникают проблемы с символом рубля
+// https://www.artlebedev.ru/kovodstvo/sections/159/#13
+$ff-rouble:                         "Rouble", "Arial", sans-serif;
+
+$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.3s $tf-default;
+
+// если требуется изинг отличный от $tf-default, то переменную называем не цифрой
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+
+$trans-600:                         0.6s $tf-default;
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1200:                           1200px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

@@ -1,0 +1,224 @@
+.slider-trainers {
+  overflow: hidden;
+}
+
+.slider-trainers__item-content {
+  h2 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-default-white;
+    letter-spacing: 0;
+    text-align: center;
+
+    margin: 94% 0 0;
+    padding: 0 12px 23px;
+
+    @include vp-1199 {
+      padding: 0 12px 21px 20px;
+      margin: 92% 0 0;
+    }
+
+    @include vp-767 {
+      padding: 0 12px 21px;
+      margin: 100% 0 0;
+    }
+  }
+
+  &:hover {
+    h2 {
+      visibility: hidden;
+    }
+  }
+}
+
+.slider-trainers__list {
+  margin: 0;
+  padding: 0;
+  height: 294px;
+  list-style-type: none;
+
+  z-index: 1;
+
+  @include vp-1199 {
+    height: auto;
+  }
+
+  @include vp-767 {
+    height: auto;
+  }
+}
+
+.slider-trainers__item {
+  position: relative;
+  text-align: center;
+  width: 260px;
+
+  background-color: $color-spindle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &:hover {
+    box-shadow: 0 0 35px 0 $color-green-house-opacity;
+
+    .slider-trainers__tooltip {
+      display: flex;
+    }
+  }
+
+  @include vp-1199 {
+    background-size: cover;
+
+    &:active {
+      box-shadow: 0 0 35px 0 $color-green-house-opacity;
+
+      .slider-trainers__tooltip {
+        display: flex;
+      }
+    }
+  }
+
+  &--1 {
+    background-image: url("../img/trainers/trainers-1.png");
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trainers/trainers-1@2x.png");
+    }
+  }
+
+  &--2 {
+    background-image: url("../img/trainers/trainers-2.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trainers/trainers-2@2x.png");
+    }
+  }
+
+  &--3 {
+    background-image: url("../img/trainers/trainers-3.png");
+
+    @include vp-1199 {
+      background-size: 127%;
+    }
+
+    @include vp-767 {
+      background-size: 136%;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trainers/trainers-3@2x.png");
+    }
+  }
+
+  &--4 {
+    background-image: url("../img/trainers/trainers-4.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/trainers/trainers-4@2x.png");
+    }
+  }
+}
+
+.slider-trainers__tooltip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  color: $color-default-white;
+
+  display: none;
+
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+
+  background-color: $color-royal-blue-opacity;
+
+  @include vp-1199 {
+    padding: 54px 20px 54px 10px;
+  }
+
+  @include vp-767 {
+    padding: 57px 10px 42px;
+  }
+
+
+  h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-spindle;
+
+    display: block;
+    margin: 0 0 33px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0 0 0 27px;
+    width: 66%;
+    text-align: start;
+    list-style-type: none;
+
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include vp-1199 {
+      width: 72%;
+    }
+
+    @include vp-767 {
+      width: 87%;
+    }
+  }
+
+  li {
+    position: relative;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    margin: 0 0 12px;
+
+    &::before {
+      position: absolute;
+      top: 7px;
+      right: 108%;
+
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-default-white;
+
+      content: "";
+    }
+  }
+}

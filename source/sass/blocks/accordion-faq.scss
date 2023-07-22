@@ -1,0 +1,148 @@
+.accordion-faq {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  border-top: 1px $color-japanese-laurel solid;
+  border-bottom: 1px $color-japanese-laurel solid;
+}
+
+.accordion-faq__element {
+  padding: 25px 0 24px;
+
+  &:not(:last-child) {
+    border-bottom: 1px $color-japanese-laurel solid;
+  }
+
+  @include vp-767 {
+    padding: 22px 0 19px;
+  }
+}
+
+.accordion-faq__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-sapphire;
+
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 21px;
+      width: 238px;
+    }
+  }
+}
+
+.accordion-faq__button {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  background-color: $color-default-white;
+  border-radius: 50%;
+  border: 1px $color-sapphire solid;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 18px;
+    height: 2px;
+    margin: auto;
+
+    background-color: $color-resolution-blue;
+    content: "";
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  @include hover-focus {
+    background-color: $color-sapphire;
+    outline: none;
+
+    &::before,
+    &::after {
+      background-color: $color-default-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: initial;
+  }
+
+  @include vp-767 {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+
+    &::before,
+    &::after {
+      width: 12px;
+    }
+  }
+}
+
+.accordion-faq__element.is-active {
+  .accordion-faq__button {
+    background-color: $color-sapphire;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.accordion-faq__wrapper {
+  p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-sapphire;
+
+    padding: 10px 177px 0 0;
+    margin: 0;
+
+    @include vp-1199 {
+      padding: 8px 160px 0 0;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 22px;
+      padding: 13px 20px 0 0;
+    }
+  }
+}
+
+.accordion-faq__space-mobile {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
