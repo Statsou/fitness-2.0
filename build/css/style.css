@@ -2213,6 +2213,12 @@ button,
     height: 167px;
   }
 }
+@media (max-width: 767px) {
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .video__prview {
   width: 100%;
