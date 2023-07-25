@@ -43,18 +43,9 @@
 .slider-trainers__list {
   margin: 0;
   padding: 0;
-  height: 294px;
   list-style-type: none;
 
   z-index: 1;
-
-  @include vp-1199 {
-    height: auto;
-  }
-
-  @include vp-767 {
-    height: auto;
-  }
 }
 
 .slider-trainers__item {
@@ -65,7 +56,7 @@
   background-color: $color-spindle;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 
   &:hover {
     box-shadow: 0 0 35px 0 $color-green-house-opacity;
@@ -76,8 +67,6 @@
   }
 
   @include vp-1199 {
-    background-size: cover;
-
     &:active {
       box-shadow: 0 0 35px 0 $color-green-house-opacity;
 
@@ -106,14 +95,6 @@
 
   &--3 {
     background-image: url("../img/trainers/trainers-3.png");
-
-    @include vp-1199 {
-      background-size: 127%;
-    }
-
-    @include vp-767 {
-      background-size: 136%;
-    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/trainers/trainers-3@2x.png");
