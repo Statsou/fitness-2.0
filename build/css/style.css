@@ -4463,6 +4463,7 @@ button,
 @media (max-width: 767px) {
   .reviews__slider-wrapper {
     width: 100%;
+    padding: 0 47px;
   }
 }
 
@@ -4477,12 +4478,11 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  z-index: 10;
 }
 @media (max-width: 767px) {
   .reviews__navigation {
     top: 0;
-    height: 0;
+    height: 100%;
   }
 }
 
