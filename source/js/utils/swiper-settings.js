@@ -32,34 +32,6 @@ const swiperSettings = function () {
       },
     },
   });
-}
-
-
-
-const createListenerSwipe = function () {
-  if (document.getElementById('swiperPrevReviews') && document.getElementById('swiperNextReviews')) {
-    const swiperPrevReviews = document.getElementById('swiperPrevReviews');
-    const swiperNextReviews = document.getElementById('swiperNextReviews');
-
-    swiperPrevReviews.addEventListener('click', () => {
-      swiperReviews.slidePrev();
-    });
-    swiperNextReviews.addEventListener('click', () => {
-      swiperReviews.slideNext();
-    });
-  }
-
-  if (document.getElementById('swiperPrevTrainers') && document.getElementById('swiperNextTrainers')) {
-    const swiperPrevTrainers = document.getElementById('swiperPrevTrainers');
-    const swiperNextTrainers = document.getElementById('swiperNextTrainers');
-
-    swiperPrevTrainers.addEventListener('click', () => {
-      swiperTrainers.slidePrev();
-    });
-    swiperNextTrainers.addEventListener('click', () => {
-      swiperTrainers.slideNext();
-    });
-  }
 };
 
-export {swiperSettings, createListenerSwipe};
+export {swiperSettings};

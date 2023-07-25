@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {playVideo} from './utils/play-video';
-import {swiperSettings, createListenerSwipe} from './utils/swiper-settings';
+import {swiperSettings} from './utils/swiper-settings';
 import {initModals} from './modules/modals/init-modals';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initAccordions} from './modules/accordion/init-accordion';
@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   playVideo();
   swiperSettings();
-  createListenerSwipe();
+  // createListenerSwipe();
 
   // Modules
   // ---------------------------------

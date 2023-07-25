@@ -3151,11 +3151,11 @@ button,
 }
 @media (hover: hover) {
   .trainers__arrow:hover:not(.focus-visible):enabled {
-    outline: 1px #AFAFAF solid;
+    outline: 1px #102654 solid;
   }
 }
 .trainers__arrow.focus-visible:focus {
-  outline: 1px #AFAFAF solid;
+  outline: 1px #102654 solid;
 }
 .trainers__arrow:active:not(.focus-visible):enabled {
   background-color: #102654;
@@ -3170,13 +3170,13 @@ button,
 .trainers__arrow::before {
   position: absolute;
   height: 1px;
-  background-color: #AFAFAF;
+  background-color: #102654;
   content: "";
 }
 .trainers__arrow::after {
   position: absolute;
   height: 1px;
-  background-color: #AFAFAF;
+  background-color: #102654;
   content: "";
 }
 .trainers__arrow--prev::before {
@@ -3259,12 +3259,16 @@ button,
 }
 @media (max-width: 1199px) {
   .slider-trainers__item-content h2 {
+    font-size: 18px;
+    line-height: 27px;
     padding: 0 12px 21px 20px;
     margin: 92% 0 0;
   }
 }
 @media (max-width: 767px) {
   .slider-trainers__item-content h2 {
+    font-size: 18px;
+    line-height: 27px;
     padding: 0 12px 21px;
     margin: 100% 0 0;
   }
@@ -3394,7 +3398,7 @@ button,
 }
 @media (max-width: 767px) {
   .slider-trainers__tooltip {
-    padding: 57px 10px 42px;
+    padding: 44px 10px 42px;
   }
 }
 .slider-trainers__tooltip h3 {
@@ -4465,6 +4469,7 @@ button,
 .reviews__navigation {
   position: absolute;
   top: 38%;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4477,7 +4482,7 @@ button,
 @media (max-width: 767px) {
   .reviews__navigation {
     top: 0;
-    height: 100%;
+    height: 0;
   }
 }
 

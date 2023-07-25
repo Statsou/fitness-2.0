@@ -54,6 +54,7 @@
 .reviews__navigation {
   position: absolute;
   top: 38%;
+  right: 0;
 
   display: flex;
   justify-content: space-between;
@@ -62,7 +63,7 @@
 
   @include vp-767 {
     top: 0;
-    height: 100%;
+    height: 0;
   }
 }
 
@@ -107,14 +108,14 @@
   &::before {
     position: absolute;
     height: 1px;
-    background-color: #102654;
+    background-color: $color-sapphire;
     content: "";
   }
 
   &::after {
     position: absolute;
     height: 1px;
-    background-color: #102654;
+    background-color: $color-sapphire;
     content: "";
   }
 
