@@ -13,4 +13,3 @@ const playVideo = function () {
 };
 
 export {playVideo};
-

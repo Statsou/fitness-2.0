@@ -88,21 +88,6 @@
     margin: 0 0 5px;
   }
 
-  span {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 66px;
-
-    display: block;
-    margin: 0 0 22px;
-
-    @include vp-767 {
-      margin: 0 0 17px;
-    }
-  }
-
   p {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
@@ -116,50 +101,65 @@
       margin: 0 0 31px;
     }
   }
+}
 
-  a {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: inherit;
-    letter-spacing: 1px;
+.promotions__additional {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 66px;
 
-    align-self: baseline;
-    margin: auto 0 3px 0;
+  display: block;
+  margin: 0 0 22px;
 
-    border-bottom: 1px $color-default-white solid;
+  @include vp-767 {
+    margin: 0 0 17px;
+  }
+}
 
-    &:not(.disabled) {
-      @include hover {
-        opacity: 0.3;
-      }
+.promotions__description-link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: 1px;
 
-      @include focus {
-        position: relative;
-        top: 5px;
-        right: 10px;
+  align-self: baseline;
+  margin: auto 0 3px 0;
 
-        padding: 6px 10px;
-        outline: 1px $color-default-white solid;
-        border: none;
-      }
+  border-bottom: 1px $color-default-white solid;
 
-      @include active {
-        opacity: 1;
-      }
+  &:not(.disabled) {
+    @include hover {
+      opacity: 0.3;
     }
 
-    &.disabled {
-      opacity: 0.5;
-      cursor: initial;
+    @include focus {
+      position: relative;
+      top: 5px;
+      right: 10px;
+
+      padding: 6px 10px;
+      outline: 1px $color-default-white solid;
+      border: none;
     }
 
-    @include vp-767 {
-      margin: 0 auto;
+    @include active {
+      opacity: 1;
     }
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
   }
 }
 
@@ -246,57 +246,57 @@
       padding: 0 30px;
     }
   }
+}
 
-  a {
-    position: relative;
+.promotions__item-link {
+  position: relative;
 
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $color-resolution-blue;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-resolution-blue;
 
-    border-bottom: 1px $color-resolution-blue solid;
+  border-bottom: 1px $color-resolution-blue solid;
 
-    &:not(.disabled) {
-      @include hover {
-        opacity: 0.8;
-      }
-
-      @include focus {
-        position: relative;
-        right: 10px;
-
-        padding: 6px 10px;
-        outline: 1px $color-resolution-blue solid;
-        border: none;
-      }
-
-      @include active {
-        opacity: 1;
-      }
+  &:not(.disabled) {
+    @include hover {
+      opacity: 0.8;
     }
 
-    &.disabled {
-      opacity: 0.3;
-      cursor: initial;
+    @include focus {
+      position: relative;
+      right: 10px;
+
+      padding: 6px 10px;
+      outline: 1px $color-resolution-blue solid;
+      border: none;
     }
 
-
-    @include vp-1199 {
-      align-self: start;
-      margin: auto 0 2px;
+    @include active {
+      opacity: 1;
     }
+  }
 
-    @include vp-767 {
-      margin: 0 auto;
-    }
+  &.disabled {
+    opacity: 0.3;
+    cursor: initial;
+  }
+
+
+  @include vp-1199 {
+    align-self: start;
+    margin: auto 0 2px;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
   }
 }
 
-.promotion__space-tablet {
+.promotions__space-tablet {
   display: none;
 
   @include vp-1199 {

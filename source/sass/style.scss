@@ -22,32 +22,28 @@
 
 // Blocks
 // ---------------------------------
-@import "blocks/button";
+@import "blocks/button-link";
 @import "blocks/main-header";
 @import "blocks/main-footer";
 @import "blocks/hero";
 @import "blocks/promo";
 @import "blocks/video";
-
 @import "blocks/subscriptions";
 @import "blocks/tabs-subscriptions";
-
 @import "blocks/super-games";
 @import "blocks/trainers";
 @import "blocks/slider-trainers";
+@import "blocks/trainer-advanages";
 @import "blocks/advantages";
 @import "blocks/promotions";
-
 @import "blocks/faq";
 @import "blocks/tabs-faq";
 @import "blocks/accordion-faq";
-
 @import "blocks/reviews";
 @import "blocks/slider-reviews";
 @import "blocks/feedback";
 @import "blocks/registration";
 @import "blocks/contacts";
-
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

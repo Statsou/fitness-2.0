@@ -28,36 +28,6 @@
     row-gap: 9px;
   }
 
-  span {
-    font-family: "Alumni Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 58px;
-    color: $color-default-white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-
-    display: block;
-    padding: 0 50px;
-    margin: 0 0 11px;
-
-    @include vp-1199 {
-      font-size: 29px;
-      line-height: 24px;
-      letter-spacing: 2px;
-
-      padding: 0;
-      margin: 0 0 12px;
-    }
-
-    @include vp-767 {
-      font-size: 21px;
-      line-height: 24px;
-      margin: 0 0 16px;
-    }
-  }
-
   h1 {
     font-family: "Alumni Sans", "Arial", sans-serif;
     font-style: normal;
@@ -116,6 +86,36 @@
       bottom: 0;
       margin: 0 0 117px;
     }
+  }
+}
+
+.hero__additional {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 58px;
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  display: block;
+  padding: 0 50px;
+  margin: 0 0 11px;
+
+  @include vp-1199 {
+    font-size: 29px;
+    line-height: 24px;
+    letter-spacing: 2px;
+
+    padding: 0;
+    margin: 0 0 12px;
+  }
+
+  @include vp-767 {
+    font-size: 21px;
+    line-height: 24px;
+    margin: 0 0 16px;
   }
 }
 

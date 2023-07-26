@@ -111,20 +111,42 @@
       margin: 0 0 1px;
     }
   }
+}
 
-  span {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-persian-blue;
+.advantages__additional {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-persian-blue;
 
+  display: block;
+  text-align: left;
+
+  @include vp-767 {
+    display: inline;
+  }
+
+  &--custom {
+    color: $color-default-white;
+
+    font-size: 26px;
+    line-height: 39px;
+    padding: 0;
+    margin: 0 0 33px;
     display: block;
-    text-align: left;
+    text-align: center;
+
+    @include vp-1199 {
+      font-size: 22px;
+      padding: 0 6px 0 15px;
+      margin: 0 0 11px;
+    }
 
     @include vp-767 {
-      display: inline;
+      padding: 0;
+      margin: 0 0 8px;
     }
   }
 }
@@ -248,28 +270,6 @@
       padding: 0 13px 0 10px;
       margin: 0 0 2px;
       line-height: 55px;
-    }
-  }
-
-  span {
-    color: $color-default-white;
-
-    font-size: 26px;
-    line-height: 39px;
-    padding: 0;
-    margin: 0 0 33px;
-    display: block;
-    text-align: center;
-
-    @include vp-1199 {
-      font-size: 22px;
-      padding: 0 6px 0 15px;
-      margin: 0 0 11px;
-    }
-
-    @include vp-767 {
-      padding: 0;
-      margin: 0 0 8px;
     }
   }
 }

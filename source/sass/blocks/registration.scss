@@ -101,13 +101,44 @@
 }
 
 .registration__submit {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 12px;
+  line-height: 14px;
+  color: $color-default-white;
   letter-spacing: 2px;
+  text-transform: uppercase;
 
   display: block;
   padding: 17px 162px;
 
   border: 3px $color-default-white solid;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  &:not(:disabled) {
+    @include hover {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+    }
+
+    @include focus {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+    }
+
+    @include active {
+      background-color: $color-default-white;
+      color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: initial;
+  }
 
   @include vp-1199 {
     width: 100%;

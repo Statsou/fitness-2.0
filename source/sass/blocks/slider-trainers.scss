@@ -119,11 +119,9 @@
 
   display: none;
 
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
   width: 100%;
   height: 100%;
@@ -139,7 +137,6 @@
     padding: 44px 10px 42px;
   }
 
-
   h3 {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
@@ -149,63 +146,5 @@
 
     padding: 0;
     margin: 0;
-  }
-
-  span {
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $color-spindle;
-
-    display: block;
-    margin: 0 0 33px;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0 0 0 27px;
-    width: 66%;
-    text-align: start;
-    list-style-type: none;
-
-    overflow-x: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    @include vp-1199 {
-      width: 72%;
-    }
-
-    @include vp-767 {
-      width: 87%;
-    }
-  }
-
-  li {
-    position: relative;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-
-    margin: 0 0 12px;
-
-    &::before {
-      position: absolute;
-      top: 7px;
-      right: 108%;
-
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: $color-default-white;
-
-      content: "";
-    }
   }
 }
