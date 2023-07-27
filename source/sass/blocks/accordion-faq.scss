@@ -84,6 +84,19 @@
     }
   }
 
+  // ТУТ
+  @include active {
+    background-color: $color-sapphire;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
   &:disabled {
     opacity: 0.3;
     cursor: initial;
@@ -101,13 +114,14 @@
   }
 }
 
+// ТУТ
 .accordion-faq__element.is-active {
   .accordion-faq__button {
-    background-color: $color-sapphire;
+    // background-color: $color-sapphire;
 
-    &::before {
-      background-color: $color-default-white;
-    }
+    // &::before {
+    //   background-color: $color-default-white;
+    // }
 
     &::after {
       display: none;

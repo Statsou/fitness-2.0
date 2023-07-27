@@ -45,6 +45,9 @@
   border: 1px $color-kaitoke-green-opacity solid;
   background-color: transparent;
 
+  -webkit-touch-callout: none;
+  user-select: none;
+
   cursor: pointer;
 
   &.is-active {

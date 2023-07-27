@@ -6,6 +6,8 @@
     justify-content: space-between;
     padding: 43px 104px 26px;
 
+    flex-wrap: wrap;
+
     @include vp-1199 {
       padding: 46px 45px 44px;
     }
@@ -49,6 +51,8 @@
   list-style-type: none;
 
   display: flex;
+
+  flex-wrap: wrap;
 
   @include vp-1199 {
     left: 7px;

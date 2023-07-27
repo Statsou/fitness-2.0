@@ -58,7 +58,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &:hover {
+  @include hover {
+    outline: none;
+    box-shadow: 0 0 35px 0 $color-green-house-opacity;
+
+    .slider-trainers__tooltip {
+      display: flex;
+    }
+  }
+
+  @include focus {
+    outline: none;
     box-shadow: 0 0 35px 0 $color-green-house-opacity;
 
     .slider-trainers__tooltip {

@@ -1545,6 +1545,8 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .main-header__container-primary {
@@ -1643,6 +1645,8 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 43px 104px 26px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .main-footer .container {
@@ -1691,6 +1695,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .main-footer__nav-list {
@@ -1932,6 +1938,7 @@ button,
   line-height: 21px;
   color: #ffffff;
   text-align: right;
+  width: 113px;
   margin: 0 0 85px;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -2099,6 +2106,7 @@ button,
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  color: #102654;
   margin: 0;
 }
 @media (max-width: 1199px) {
@@ -2127,6 +2135,7 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
+  color: #102654;
   display: inline-block;
   margin: 0 0 39px;
 }
@@ -2267,7 +2276,7 @@ button,
   width: 72px;
   height: 72px;
   margin: auto;
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(226.05deg, #ed0233 17.6%, #003eb7 92.31%);
   border: none;
   padding: 10px;
   border-radius: 50%;
@@ -2807,9 +2816,9 @@ button,
   display: grid;
   -ms-grid-columns: 201px 92px;
   grid-template-columns: 201px 92px;
-  -ms-grid-rows: 79px 79px 60px 67px;
-  grid-template-rows: 79px 79px 60px 67px;
-  padding: 83px 79px 87px;
+  -ms-grid-rows: 79px 79px 1fr 1fr;
+  grid-template-rows: 79px 79px 1fr 1fr;
+  padding: 72px 79px 85px;
   -webkit-column-gap: 49px;
      -moz-column-gap: 49px;
           column-gap: 49px;
@@ -2818,11 +2827,11 @@ button,
 }
 @media (max-width: 1199px) {
   .super-games__description {
-    padding: 47px 45px 31px;
+    padding: 35px 45px 44px;
     -ms-grid-columns: 124px 55px;
     grid-template-columns: 124px 55px;
-    -ms-grid-rows: 52px 55px 38px 58px;
-    grid-template-rows: 52px 55px 38px 58px;
+    -ms-grid-rows: 52px 55px 1fr 1fr;
+    grid-template-rows: 52px 55px 1fr 1fr;
     -webkit-column-gap: 23px;
        -moz-column-gap: 23px;
             column-gap: 23px;
@@ -2831,7 +2840,6 @@ button,
 }
 @media (max-width: 767px) {
   .super-games__description {
-    padding: 47px 45px 42px;
     -webkit-column-gap: 21px;
        -moz-column-gap: 21px;
             column-gap: 21px;
@@ -2846,7 +2854,7 @@ button,
   letter-spacing: 3px;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
+  margin: 11px 0 0;
   padding: 2px 12px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -2867,7 +2875,7 @@ button,
   font-size: 18px;
   line-height: 29px;
   color: #ffffff;
-  margin: 0;
+  margin: 11px 0 0;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
@@ -2876,6 +2884,11 @@ button,
   .super-games__description p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__description p {
+    margin: 11px 0 24px;
   }
 }
 
@@ -2903,6 +2916,7 @@ button,
 
 .super-games__date {
   position: relative;
+  margin: 12px 0 0;
 }
 .super-games__date h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2936,6 +2950,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   width: 77px;
+  margin: 0;
 }
 @media (max-width: 1199px) {
   .super-games__date p {
@@ -2982,6 +2997,7 @@ button,
 
 .super-games__time {
   position: relative;
+  margin: 12px 0 0;
 }
 .super-games__time h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3005,6 +3021,7 @@ button,
   font-size: 40px;
   line-height: 60px;
   color: #ffffff;
+  margin: 0;
 }
 @media (max-width: 1199px) {
   .super-games__time p {
@@ -3301,11 +3318,24 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
 }
-.slider-trainers__item:hover {
+@media (hover: hover) {
+  .slider-trainers__item:hover:not(.focus-visible) {
+    outline: none;
+    -webkit-box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+            box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
+  }
+  .slider-trainers__item:hover:not(.focus-visible) .slider-trainers__tooltip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.slider-trainers__item.focus-visible:focus {
+  outline: none;
   -webkit-box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
           box-shadow: 0 0 35px 0 rgba(42, 59, 99, 0.17);
 }
-.slider-trainers__item:hover .slider-trainers__tooltip {
+.slider-trainers__item.focus-visible:focus .slider-trainers__tooltip {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3716,6 +3746,11 @@ button,
 .advantages__title--custom {
   margin: 0;
 }
+@media (max-width: 767px) {
+  .advantages__title--custom {
+    margin: 0 0 7px;
+  }
+}
 .advantages__title--custom h3 {
   color: #ffffff;
   letter-spacing: 2px;
@@ -3866,7 +3901,7 @@ button,
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  margin: 0;
+  margin: 0 0 22px;
 }
 @media (max-width: 767px) {
   .promotions__description p {
@@ -4185,6 +4220,11 @@ button,
   margin: 0 0 8px;
   border: 1px rgba(16, 38, 84, 0.2) solid;
   background-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 .tabs-faq__control.is-active {
@@ -4341,6 +4381,24 @@ button,
 .accordion-faq__button.focus-visible:focus::before, .accordion-faq__button.focus-visible:focus::after {
   background-color: #ffffff;
 }
+.accordion-faq__button.focus-visible:active {
+  background-color: #102654;
+}
+.accordion-faq__button.focus-visible:active::before {
+  background-color: #ffffff;
+}
+.accordion-faq__button.focus-visible:active::after {
+  display: none;
+}
+.accordion-faq__button:active:not(.focus-visible) {
+  background-color: #102654;
+}
+.accordion-faq__button:active:not(.focus-visible)::before {
+  background-color: #ffffff;
+}
+.accordion-faq__button:active:not(.focus-visible)::after {
+  display: none;
+}
 .accordion-faq__button:disabled {
   opacity: 0.3;
   cursor: initial;
@@ -4358,12 +4416,6 @@ button,
   }
 }
 
-.accordion-faq__element.is-active .accordion-faq__button {
-  background-color: #102654;
-}
-.accordion-faq__element.is-active .accordion-faq__button::before {
-  background-color: #ffffff;
-}
 .accordion-faq__element.is-active .accordion-faq__button::after {
   display: none;
 }
