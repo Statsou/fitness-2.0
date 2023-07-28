@@ -3750,7 +3750,7 @@ button,
 .advantages__item--custom::before {
   position: absolute;
   top: calc(50% - 1px);
-  right: 26vh;
+  right: 300px;
   width: 340px;
   height: 2px;
   background: rgba(209, 10, 66, 0.2);
@@ -3764,7 +3764,7 @@ button,
 .advantages__item--custom::after {
   position: absolute;
   top: calc(50% - 1px);
-  left: 26vh;
+  left: 300px;
   width: 340px;
   height: 2px;
   background: rgba(209, 10, 66, 0.2);
