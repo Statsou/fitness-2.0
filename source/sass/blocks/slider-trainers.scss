@@ -32,12 +32,6 @@
       margin: 100% 0 0;
     }
   }
-
-  &:hover {
-    h2 {
-      visibility: hidden;
-    }
-  }
 }
 
 .slider-trainers__list {
@@ -62,6 +56,10 @@
     outline: none;
     box-shadow: 0 0 35px 0 $color-green-house-opacity;
 
+    h2 {
+      visibility: hidden;
+    }
+
     .slider-trainers__tooltip {
       display: flex;
     }
@@ -71,14 +69,22 @@
     outline: none;
     box-shadow: 0 0 35px 0 $color-green-house-opacity;
 
+    h2 {
+      visibility: hidden;
+    }
+
     .slider-trainers__tooltip {
       display: flex;
     }
   }
 
   @include vp-1199 {
-    &:active {
+    @include active {
       box-shadow: 0 0 35px 0 $color-green-house-opacity;
+
+      h2 {
+        visibility: hidden;
+      }
 
       .slider-trainers__tooltip {
         display: flex;
