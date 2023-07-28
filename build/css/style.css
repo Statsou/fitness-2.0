@@ -5063,6 +5063,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts .contacts__item {
+    display: block;
     margin: 0 0 19px;
   }
 }
