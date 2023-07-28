@@ -2459,7 +2459,7 @@ button,
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
-  background-color: #f8f9fc;
+  background-color: transparent;
   z-index: 1;
 }
 @media (max-width: 1199px) {
@@ -2608,12 +2608,10 @@ button,
 }
 
 .tabs-subscriptions__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
   margin: 0;
   gap: 44px;
@@ -2630,6 +2628,7 @@ button,
   padding: 55px 69px 60px;
   background-color: #ffffff;
   border: 7px transparent solid;
+  z-index: 2;
 }
 @media (max-width: 1199px) {
   .tabs-subscriptions__item {
