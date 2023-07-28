@@ -44,6 +44,7 @@
 .advantages__list {
   display: grid;
   grid-template-columns: 1fr 240px 1fr;
+  grid-template-rows: repeat(2, 1fr);
 
   max-width: 1040px;
   margin: 0 auto;
@@ -215,8 +216,8 @@
 
   &::before {
     position: absolute;
-    top: calc(50% - 2px);
-    right: 300px;
+    top: calc(50% - 1px);
+    right: 26vh;
 
     width: 340px;
     height: 2px;
@@ -231,8 +232,8 @@
 
   &::after {
     position: absolute;
-    top: calc(50% - 2px);
-    left: 300px;
+    top: calc(50% - 1px);
+    left: 26vh;
 
     width: 340px;
     height: 2px;

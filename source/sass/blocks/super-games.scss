@@ -1,7 +1,7 @@
 .super-games {
   display: flex;
   max-width: 1366px;
-  padding: 119px 103px 60px;
+  padding: 120px 103px 60px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -28,8 +28,8 @@
   background-color: $color-torch-red;
 
   @include vp-1199 {
-    padding: 35px 45px 44px;
-    grid-template-columns: 124px 55px;
+    padding: 35px 37px 44px 45px;
+    grid-template-columns: 124px 1fr;
     grid-template-rows: 52px 55px 1fr 1fr;
     column-gap: 23px;
     row-gap: 0;
@@ -99,6 +99,7 @@
   @include vp-1199 {
     letter-spacing: 0;
 
+    width: 97%;
     height: auto;
     padding: 11px 36px;
 
@@ -180,8 +181,8 @@
 
   @include vp-1199 {
     top: 19px;
-    right: 14px;
-    width: 42px;
+    left: 0;
+    width: 41px;
   }
 }
 
@@ -236,8 +237,8 @@
 
   @include vp-1199 {
     top: 20px;
-    right: 0;
-    width: 56px;
+    left: 0;
+    width: 55px;
   }
 }
 

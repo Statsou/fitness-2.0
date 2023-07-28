@@ -1,6 +1,7 @@
 .promo {
   display: grid;
   grid-template-columns: 355px 1fr;
+  grid-auto-rows: 288px 342px;
   max-width: 1366px;
   padding: 120px 103px 7px 163px;
   margin: 0 auto;
@@ -20,15 +21,13 @@
     padding: 70px 0;
 
     img {
+      display: block;
       margin: 0 0 40px;
     }
   }
 }
 
 .promo__description {
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.6);
-
   @include vp-1199 {
     text-align: center;
   }
@@ -132,8 +131,8 @@
 }
 
 .promo__video {
-  grid-column: 1 / 3;
-  margin: 0 auto;
+  grid-column: 2 / 3;
+  margin: 0;
 
   @include vp-1199 {
     top: auto;

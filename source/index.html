@@ -58,7 +58,7 @@
               Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             </p>
             <p>
-              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+              В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;<br>кардио-зона с&nbsp;40&nbsp;тренажерами.
               Также в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
             </p>
           </div>
@@ -796,8 +796,11 @@
                 <li class="slider-reviews__item swiper-slide">
                   <div class="slider-reviews__item-content">
                     <picture>
-                      <source srcset="./img/reviews/avatar-1.webp, ./img/reviews/avatar-1@2x.webp 2x" type="image/webp" width="80" height="80">
-                      <img class="slider-reviews__avatar" src="./img/reviews/avatar-1.png" srcset="./img/reviews/avatar-1@2x.png 2x" width="80" height="80" alt="Аватар посетителя фитнес-клуба.">
+                       <source media="(max-width: 767px)" srcset="./img/reviews/avatar-1.webp 1x, ./img/reviews/avatar-1@2x.webp 2x" width="80" height="80">
+                       <source srcset="./img/reviews/avatar-1.webp, ./img/reviews/avatar-1@2x.webp 2x" type="image/webp" width="80" height="80">
+
+                       <source media="(max-width: 767px)" srcset="./img/reviews/avatar-1.png 1x, ./img/reviews/avatar-1@2x.png 2x" width="80" height="80">
+                       <img class="slider-reviews__avatar" src="./img/reviews/avatar-1.png" srcset="./img/reviews/avatar-1@2x.png 2x" width="80" height="80" alt="Аватар посетителя фитнес-клуба.">
                     </picture>
                     <h3>Анна Орлова</h3>
                     <p>
@@ -809,9 +812,12 @@
                 <li class="slider-reviews__item swiper-slide">
                   <div class="slider-reviews__item-content">
                     <picture>
+                      <source media="(max-width: 767px)" srcset="./img/reviews/avatar-1.webp 1x, ./img/reviews/avatar-1@2x.webp 2x" width="80" height="80">
                       <source srcset="./img/reviews/avatar-1.webp, ./img/reviews/avatar-1@2x.webp 2x" type="image/webp" width="80" height="80">
+
+                      <source media="(max-width: 767px)" srcset="./img/reviews/avatar-1.png 1x, ./img/reviews/avatar-1@2x.png 2x" width="80" height="80">
                       <img class="slider-reviews__avatar" src="./img/reviews/avatar-1.png" srcset="./img/reviews/avatar-1@2x.png 2x" width="80" height="80" alt="Аватар посетителя фитнес-клуба.">
-                    </picture>
+                   </picture>
                     <h3>Олег Орлов</h3>
                     <p>
                       «Олег, я на даче, а проект на работе. На даче кабачки прут как не в себя.
@@ -875,16 +881,20 @@
 
               <div class="contacts__item">
                 <dt>Телефон:</dt>
-                <a class="contacts__phone" href="tel:88005555555">
-                  <dd>8-800-555-55-55</dd>
-                </a>
+                <dd>
+                  <a class="contacts__phone" href="tel:88005555555">
+                    8-800-555-55-55
+                  </a>
+                </dd>
               </div>
 
               <div class="contacts__item">
                 <dt>Email:</dt>
-                <a class="contacts__phone" href="mailto:omsk@supergym.ru">
-                  <dd>omsk@supergym.ru</dd>
-                </a>
+                <dd>
+                  <a class="contacts__email" href="mailto:omsk@supergym.ru">
+                    omsk@supergym.ru
+                  </a>
+                </dd>
               </div>
             </dl>
           </div>

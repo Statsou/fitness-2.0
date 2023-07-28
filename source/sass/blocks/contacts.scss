@@ -1,9 +1,9 @@
 .contacts {
-  padding: 42px 67px 50px 121px;
+  padding: 42px 67px 44px 121px;
   border-top: 1px $color-light-slate-grey solid;
 
   @include vp-1199 {
-    padding: 61px 67px 62px 130px;
+    padding: 61px 67px 44px 130px;
   }
 
   @include vp-767 {
@@ -11,6 +11,9 @@
   }
 
   .contacts__item {
+    display: inline-block;
+    margin: 0 0 18px;
+
     @include vp-767 {
       margin: 0 0 19px;
     }
@@ -45,25 +48,19 @@
   dl {
     position: relative;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
     max-width: 489px;
     margin: 0 3px;
-
+    column-count: 2;
     column-gap: 90px;
-    row-gap: 17px;
 
     &::before {
       position: absolute;
-      top: 0;
-      bottom: 0;
+      top: 5px;
       right: 28px;
       left: 0;
 
       width: 1px;
-      height: 88%;
+      height: 77%;
       margin: auto auto;
 
       background-color: $color-light-slate-grey;
@@ -74,10 +71,16 @@
       max-width: 100%;
       column-gap: 64px;
       row-gap: 19px;
+
+      &::before {
+        top: 8px;
+        right: 32px;
+        height: 80%;
+      }
     }
 
     @include vp-767 {
-      display: block;
+      column-count: 1;
 
       &::before {
         display: none;
