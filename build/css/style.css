@@ -2401,7 +2401,7 @@ button,
   line-height: 64px;
   letter-spacing: 2px;
   color: #102654;
-  margin: 0 0 8px;
+  margin: 0 0 7px;
 }
 @media (max-width: 1199px) {
   .subscriptions h2 {
@@ -2623,7 +2623,7 @@ button,
 
 .tabs-subscriptions__item {
   position: relative;
-  padding: 55px 69px 60px;
+  padding: 55px 67px 61px;
   background-color: #ffffff;
   border: 7px transparent solid;
   z-index: 2;
@@ -2631,8 +2631,8 @@ button,
 @media (max-width: 1199px) {
   .tabs-subscriptions__item {
     max-width: 442px;
-    padding: 55px 69px 62px;
-    margin: 0 auto 39px;
+    padding: 55px 69px 61px;
+    margin: 0 auto 40px;
   }
 }
 @media (max-width: 767px) {
@@ -2727,7 +2727,7 @@ button,
     font-size: 48px;
     line-height: 72px;
     width: 280px;
-    padding: 0 43px 0 10px;
+    padding: 0 49px 0 10px;
     margin: 0 auto 31px;
   }
   .tabs-subscriptions__additional::before {
@@ -2875,7 +2875,7 @@ button,
     font-size: 48px;
     line-height: 47px;
     letter-spacing: 1px;
-    padding: 2px 8px;
+    padding: 3px 8px;
   }
 }
 .super-games__description p {
@@ -3538,7 +3538,7 @@ button,
     line-height: 65px;
     padding: 0 10px 0 22px;
     letter-spacing: 1px;
-    margin: 0 0 42px;
+    margin: 0 0 43px;
   }
 }
 @media (max-width: 767px) {
