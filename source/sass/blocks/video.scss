@@ -14,16 +14,21 @@
 
     width: 37vh;
     height: 23vh;
+    min-width: 266px;
+    min-height: 167px;
     margin: 0 auto;
   }
 
   @include vp-767 {
-    bottom: 0;
-    width: auto;
-
     position: relative;
-    padding-bottom: 52.25%;
+    bottom: 0;
+
+    width: auto;
     height: 0;
+    min-width: auto;
+    min-height: auto;
+    padding-bottom: 52.25%;
+
     overflow: hidden;
   }
 

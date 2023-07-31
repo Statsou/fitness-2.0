@@ -3,9 +3,9 @@
 
   display: grid;
   grid-template-columns: 355px 1fr;
-  grid-auto-rows: 1fr 342px;
+  grid-template-rows: 1fr 130px;
   max-width: 1366px;
-  padding: 120px 103px 235px 163px;
+  padding: 120px 103px 105px 163px;
   margin: 0 auto;
 
   column-gap: 85px;
