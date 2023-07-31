@@ -2249,12 +2249,12 @@ button,
   content: "";
   z-index: 0;
 }
+.video__prview img {
+  height: 100%;
+  width: 100%;
+}
 @media (max-width: 767px) {
-  .video__prview picture {
-    max-width: 100%;
-  }
   .video__prview img {
-    width: 100%;
     height: auto;
     -o-object-fit: cover;
        object-fit: cover;
