@@ -116,6 +116,7 @@
   border: 3px $color-default-white solid;
 
   background-color: transparent;
+  user-select: none;
   cursor: pointer;
 
   &:not(:disabled) {

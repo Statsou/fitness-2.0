@@ -1,11 +1,14 @@
 .video {
-  position: relative;
-  right: 63px;
+  position: absolute;
+  top: 408px;
+  left: -63px;
 
   width: 364px;
   height: 228px;
 
   @include vp-1199 {
+    position: relative;
+    top: auto;
     bottom: 84px;
     left: 0;
 

@@ -304,6 +304,7 @@
 
   border: 2px $color-sapphire solid;
   background-color: transparent;
+  user-select: none;
   cursor: pointer;
 
   @include vp-767 {

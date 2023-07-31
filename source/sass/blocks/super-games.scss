@@ -19,7 +19,7 @@
 .super-games__description {
   display: grid;
   grid-template-columns: 201px 92px;
-  grid-template-rows: 79px 79px 1fr 1fr;
+  grid-template-rows: 79px 79px 1fr auto;
   padding: 72px 79px 85px;
 
   column-gap: 49px;
@@ -91,7 +91,7 @@
   align-self: center;
   width: 100%;
   height: 100%;
-  padding: 24px 94px;
+  padding: 24px 0;
   margin: 0;
 
   grid-column: 1 / 3;
@@ -244,7 +244,7 @@
 
 .super-games__image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 
   @include vp-1199 {

@@ -69,9 +69,8 @@
     }
 
     @include vp-1199 {
-      max-width: 100%;
-      column-gap: 64px;
-      row-gap: 19px;
+      max-width: 565px;
+      column-gap: 63px;
 
       &::before {
         top: 8px;
