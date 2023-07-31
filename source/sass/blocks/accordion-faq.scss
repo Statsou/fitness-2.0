@@ -84,7 +84,6 @@
     }
   }
 
-  // ТУТ
   @include active {
     background-color: $color-sapphire;
 
@@ -114,15 +113,8 @@
   }
 }
 
-// ТУТ
 .accordion-faq__element.is-active {
   .accordion-faq__button {
-    // background-color: $color-sapphire;
-
-    // &::before {
-    //   background-color: $color-default-white;
-    // }
-
     &::after {
       display: none;
     }
