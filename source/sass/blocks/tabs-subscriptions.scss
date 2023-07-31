@@ -157,7 +157,7 @@
 
 .tabs-subscriptions__item {
   position: relative;
-  padding: 55px 67px 61px;
+  padding: 55px 57px 61px;
   background-color: $color-default-white;
 
   border: 7px transparent solid;
@@ -232,7 +232,7 @@
   &::before {
     position: absolute;
     bottom: 75px;
-    right: 3px;
+    right: 14px;
 
     font-size: 100px;
     line-height: 150px;
@@ -247,7 +247,7 @@
 
   &::after {
     position: absolute;
-    right: 24px;
+    left: 164px;
 
     color: $color-sapphire;
 
@@ -259,12 +259,10 @@
 
   @include vp-1199 {
     &::before {
-      right: auto;
       left: 43px;
     }
 
     &::after {
-      right: auto;
       left: 195px;
     }
   }

@@ -2623,7 +2623,7 @@ button,
 
 .tabs-subscriptions__item {
   position: relative;
-  padding: 55px 67px 61px;
+  padding: 55px 57px 61px;
   background-color: #ffffff;
   border: 7px transparent solid;
   z-index: 2;
@@ -2695,7 +2695,7 @@ button,
 .tabs-subscriptions__additional::before {
   position: absolute;
   bottom: 75px;
-  right: 3px;
+  right: 14px;
   font-size: 100px;
   line-height: 150px;
   color: #e8e8e8;
@@ -2706,7 +2706,7 @@ button,
 }
 .tabs-subscriptions__additional::after {
   position: absolute;
-  right: 24px;
+  left: 164px;
   color: #102654;
   width: 30px;
   height: 42px;
@@ -2714,11 +2714,9 @@ button,
 }
 @media (max-width: 1199px) {
   .tabs-subscriptions__additional::before {
-    right: auto;
     left: 43px;
   }
   .tabs-subscriptions__additional::after {
-    right: auto;
     left: 195px;
   }
 }
