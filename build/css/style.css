@@ -3370,35 +3370,35 @@ button,
   }
 }
 .slider-trainers__item--1 {
-  background-image: url("../img/trainers/trainers-1.webp");
+  background-image: url("../img/trainers/trainers-1.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-trainers__item--1 {
-    background-image: url("../img/trainers/trainers-1@2x.webp");
+    background-image: url("../img/trainers/trainers-1@2x.png");
   }
 }
 .slider-trainers__item--2 {
-  background-image: url("../img/trainers/trainers-2.webp");
+  background-image: url("../img/trainers/trainers-2.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-trainers__item--2 {
-    background-image: url("../img/trainers/trainers-2@2x.webp");
+    background-image: url("../img/trainers/trainers-2@2x.png");
   }
 }
 .slider-trainers__item--3 {
-  background-image: url("../img/trainers/trainers-3.webp");
+  background-image: url("../img/trainers/trainers-3.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-trainers__item--3 {
-    background-image: url("../img/trainers/trainers-3@2x.webp");
+    background-image: url("../img/trainers/trainers-3@2x.png");
   }
 }
 .slider-trainers__item--4 {
-  background-image: url("../img/trainers/trainers-4.webp");
+  background-image: url("../img/trainers/trainers-4.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .slider-trainers__item--4 {
-    background-image: url("../img/trainers/trainers-4@2x.webp");
+    background-image: url("../img/trainers/trainers-4@2x.png");
   }
 }
 
