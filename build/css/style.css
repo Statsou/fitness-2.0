@@ -2187,10 +2187,8 @@ button,
     top: auto;
     bottom: 84px;
     left: 0;
-    width: 37vh;
-    height: 23vh;
-    min-width: 266px;
-    min-height: 167px;
+    width: 266px;
+    height: 167px;
     margin: 0 auto;
   }
 }
@@ -2509,6 +2507,10 @@ button,
   border: none;
   background-color: transparent;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   z-index: 1;
 }
 @media (max-width: 1199px) {
@@ -2640,6 +2642,18 @@ button,
     -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 30;
        border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 30;
   }
+  .tabs-subscriptions__item:hover:not(.focus-visible) .tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled) {
+    color: #ffffff;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: none;
+    padding: 25px 45px;
+  }
+  .tabs-subscriptions__item:hover:not(.focus-visible) .tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled).focus-visible:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .tabs-subscriptions__item:hover:not(.focus-visible) .tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled):active:not(.focus-visible) {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 .tabs-subscriptions__item h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -2756,25 +2770,11 @@ button,
     width: 75%;
   }
 }
-@media (hover: hover) {
-  .tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled):hover:not(.focus-visible) {
-    color: #ffffff;
-    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-    border: none;
-    padding: 25px 45px;
-  }
-}
 .tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled).focus-visible:focus {
   color: #ffffff;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
   padding: 25px 45px;
-}
-.tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled).focus-visible:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-.tabs-subscriptions__link:not(.tabs-subscriptions__link--disabled):active:not(.focus-visible) {
-  color: rgba(255, 255, 255, 0.3);
 }
 .tabs-subscriptions__link--disabled {
   opacity: 0.3;
@@ -3057,11 +3057,6 @@ button,
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media (max-width: 1199px) {
-  .super-games__image {
-    height: 292px;
-  }
 }
 
 .trainers {
